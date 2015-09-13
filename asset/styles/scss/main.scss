@@ -1,6 +1,5 @@
 @import 'includes/colors.scss';
 @import 'includes/reset.scss';
-@import 'includes/responsive.scss';
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 body{
@@ -259,3 +258,5 @@ section#copy{
 		opacity: 0.7;
 	}
 }
+
+@import 'includes/responsive.scss';

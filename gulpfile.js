@@ -36,7 +36,7 @@ var coffeeTask = function()
 
 gulp.task( 'watch' , function()
 {
-	watch( './asset/styles/scss/*.scss', sassTask);
+	watch( ['./asset/styles/scss/*.scss', './asset/styles/scss/*/*.scss'], sassTask);
 	watch( './jade/*.jade', jadeTask);
 	watch( './asset/js/coffee/*.coffee', coffeeTask);
 });

@@ -5,17 +5,6 @@ ul {
   ul li {
     list-style-type: none; }
 
-@media (max-width: 767px) {
-  .col-xs-mb {
-    margin-bottom: 30px; } }
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .col-sm-mb {
-    margin-bottom: 15px; } }
-
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (large desktops, 1200px and up) */
 body {
   background: #FCFFFF;
   font-family: 'Lato', sans-serif; }
@@ -221,3 +210,20 @@ section#copy {
   section#copy span, section#copy a {
     color: #fff;
     opacity: 0.7; }
+
+@media (max-width: 767px) {
+  .col-xs-mb {
+    margin-bottom: 30px; }
+  section#landing {
+    background: #fff; }
+  a.mailme {
+    padding: 10px 20px 20px 20px !important;
+    font-size: 20px !important; } }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .col-sm-mb {
+    margin-bottom: 15px; } }
+
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
