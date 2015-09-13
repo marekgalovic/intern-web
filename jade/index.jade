@@ -2,15 +2,15 @@ doctype html
 html
 	head
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		title Take me as intern during the summer
+		title Hey ! I'd like to be your intern.
 		meta(charset="utf-8")
-		meta(name="description", content="Hey. My name is Marek and I'd like to be your intern during the summer.")
+		meta(name="description", content="Hey. My name is Marek and I'd like to be your intern during the summer 2016.")
 		meta(name="keywords", content="intern, summer, marekgalovic, web developer")
-		meta(property="og:title", content="Take me as intern during the summer")
+		meta(property="og:title", content="Hey ! I'd like to be your intern.")
 		meta(property="og:type", content="website")
 		meta(property="og:image", content="http://intern.marekgalovic.com/asset/img/socialcover.png")
 		meta(property="og:url", content="http://intern.marekgalovic.com")
-		meta(property="og:description", content="Hey. My name is Marek and I'd like to be your intern during the summer.")
+		meta(property="og:description", content="Hey. My name is Marek and I'd like to be your intern during the summer 2016.")
 		include ./includes/head.jade
 	body
 		div.fb-root
@@ -27,13 +27,13 @@ html
 				div.col-sm-12.col-md-7.wow.slideInDown
 					span#landing-text <strong>Hey</strong> <br> My name is Marek. <br> I am 18 years old web application developer from Slovakia.
 		section#whatiwant
-			span This summer I'd like to be your intern.
+			span I'd like to be your <strong>intern</strong> during the <strong>summer 2016</strong>
 		section#whatido
 			h2.wow.pulse How can I help you ?
 			div.container
 				//front end skills
-				div.row.wow.slideInLeft
-					.col-sm-mb.col-sm-12.col-md-3
+				div.row
+					.col-sm-mb.col-sm-12.col-md-3.wow.slideInLeft
 						h3 Front-end skills
 						ul.skillsets
 							li HTML
@@ -42,7 +42,7 @@ html
 							li AngularJS
 					.hidden-sm.hidden-xs.col-md-3
 						span.bracket }
-					.col-sm-12.col-md-6
+					.col-sm-12.col-md-6.wow.slideInRight
 						h3 I can help you with
 						ul.skilldescs
 							li Slicing graphics into <strong>responsive HTML &amp; CSS</strong> templates.
@@ -50,8 +50,8 @@ html
 							li Developing <strong>browser applications</strong> using <strong>AngularJS.</strong>
 							li Preparing a template for your <strong>mobile app using Ionic.</strong>
 				//server side
-				div.row.wow.slideInRight
-					.col-sm-12.col-md-3
+				div.row
+					.col-sm-12.col-md-3.wow.slideInLeft
 						h3 Server applications
 						ul.skillsets
 							li PHP
@@ -59,7 +59,7 @@ html
 							li Socket.io
 					.hidden-sm.hidden-xs.col-md-3
 						span.bracket }
-					.col-sm-12.col-md-6
+					.col-sm-12.col-md-6.wow.slideInRight
 						h3 I can help you with
 						ul.skilldescs
 							li Developing <strong>complex and scalable</strong> server applications using <strong>PHP</strong>.
@@ -67,8 +67,8 @@ html
 							li Developing an <strong>real-time application</strong> using Socket.io
 							li Designing <strong>RESTful APIs</strong> for your web applications.
 				//databases
-				div.row.wow.slideInLeft
-					.col-sm-12.col-md-3
+				div.row
+					.col-sm-12.col-md-3.wow.slideInLeft
 						h3 Databases
 						ul.skillsets
 							li MySQL &amp; PostgreSQL
@@ -76,7 +76,7 @@ html
 							li Elasticsearch
 					.hidden-sm.hidden-xs.col-md-3
 						span.bracket }
-					.col-sm-12.col-md-6
+					.col-sm-12.col-md-6.wow.slideInRight
 						h3 I can help you with
 						ul.skilldescs
 							li Designing a <strong>relational database</strong> for your web application.
@@ -96,21 +96,21 @@ html
 			h2.wow.pulse Experience
 			div.container
 				.row.col-xs-12.wow.slideInLeft
-					h3 Freelance web developer
-					span.date 2012 - 2014
-					p I've been working on small and medium projects as a freelance dev since 2012. This helped me to get better mostly in browser technologies such as HTML, CSS and JavaScript.
-				.row.col-xs-12.wow.slideInRight
+					h3 Software developer at KBS Development
+					span.date 2015
+					p I work as a software developer at KBS Development. I create web applications using mainly PHP (Laravel framework) and AngularJS. This company cares about the way how the code is written so I have learned how to use design patterns and coding concepts in software development.
+				.row.col-xs-12.wow.slideInLeft
 					h3 Software developer at PrincipioMSD 
 					span.date 2014 - 2015
 					p During this time I worked as software developer at PrincipioMSD. I worked mainly in PHP (Laravel framework) and developed custom e-commerce system for them. This was such a great experience. It helped me to understand how to design application for future scale, how to design big database structures and how to work with data effectively.
 				.row.col-xs-12.wow.slideInLeft
+					h3 Freelance web developer
+					span.date 2012 - 2014
+					p I've been working on small and medium projects as a freelance dev since 2012. This helped me to get better mostly in browser technologies such as HTML, CSS and JavaScript.
+				.row.col-xs-12.wow.slideInLeft
 					h3 Founder at Contee
 					span.date September 2014 - March 2015
 					p In September 2014 I founded Contee - content recommendation service. It uses Node.js as an application server and MongoDB to store and analyze the data. I won a few competitions with Contee and learned how to work with tons of raw data in order to give them some meaning.
-				.row.col-xs-12.wow.slideInRight
-					h3 Software developer at KBS Development
-					span.date 2015
-					p I work as a software developer at KBS Development. I create web applications using mainly PHP (Laravel framework) and AngularJS. This company cares about the way how the code is written so I have learned how to use design patterns and coding concepts in software development.
 				.row.col-xs-12.wow.slideInLeft
 					h3 Freetime projects
 					span.date June 1997 - present :)
