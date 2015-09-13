@@ -1,0 +1,261 @@
+@import 'includes/colors.scss';
+@import 'includes/reset.scss';
+@import 'includes/responsive.scss';
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body{
+	background: $light-gray;
+	font-family: 'Lato', sans-serif;
+}
+
+h2{
+	font-size: 50px;
+	padding-bottom: 70px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h3{
+	text-align: left;
+	font-size: 30px;
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+
+h4{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+p{
+	padding-left: 20px;
+	color: $gray;
+	font-weight: 300;
+	line-height: 46px;
+	font-size: 16px;
+}
+
+section{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 70px 0;
+	h2{
+		text-align: center;
+	}
+}
+
+section#landing{
+	height: 750px;
+	padding: 0;
+	background: url('../img/me.png') bottom right no-repeat;
+	background-size: auto 700px;
+	span{
+		display: block;
+		padding: 200px 0 0 0;
+		font-size: 38px;
+		strong{
+			font-size: 82px;
+			color: $brick;
+		}
+	}
+	img{
+		float: right;
+		max-height: 100%;
+		width: auto;
+	}
+}
+
+section#whatiwant{
+	background: $brick;
+	text-align: center;
+	span{
+		font-size: 45px;
+		color: #fff;
+	}
+}
+
+section#whatido{
+	.row{
+		padding-bottom: 70px;
+		&:last-child{
+			padding-bottom: 0px;
+		}
+		&:hover{
+			span.bracket{
+				opacity: 0.6;
+			}
+		}
+	}
+	span.bracket{
+		display: block;
+		width: 100%;
+		padding-top: 15px;
+		text-align: center;
+		font-size: 130px;
+		font-weight: 200;
+		line-height: 200px;
+		color: $gray;
+		font-weight: 300;
+		opacity: 0.3;
+		transition: ease-in-out 0.3s;
+	}
+	ul{
+		li{
+			color: $gray;
+			font-weight: 300;
+			line-height: 46px;
+			font-size: 17px;
+			&:before{
+				font-family: FontAwesome;
+				content: '\f00c';
+				margin-right: 15px;
+				color: $brick;
+			}
+		}
+	}
+	ul.skillsets{
+		padding: 0 0 0 20px;
+		li{
+			color: $medium-gray;
+			font-weight: 400;
+			&:before{
+				content: "";
+				margin: 0;
+			}
+		}
+	}
+}
+
+section#whyiwant{
+	background: $blue;
+	color: #fff;  
+	p{
+		text-align: justify;
+		color: inherit;
+		font-size: 30px;
+	}
+}
+
+section#experience{
+	.row{
+		margin-bottom: 30px;
+	}
+	h3{
+		margin-bottom: 5px;
+	}
+	span.date{
+		display: block;
+		margin-bottom: 5px;
+		color: $gray;
+	}
+	p{
+		padding-left: 0;
+		line-height: 30px;
+	}
+}
+
+section#awards{
+	background: $light-blue;
+	ul{
+		text-align: center;
+		li{
+			float: none;
+			display: inline-block;
+			height: auto;
+			img{
+				float: left;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+section#contact{
+	background: $dark-gray;
+	color: #fff;
+	text-align: center;
+	img{
+		position: relative;
+		display: block;
+		width: 150px;
+		height: auto;
+		border-radius: 125px;
+		margin: 0 auto 0 auto;
+	}
+	ul.social{
+		text-align: center;
+		margin: 70px 0;
+		li{
+			display: inline-block;
+			span{
+				display: block;
+				width: 56px;
+				height: 56px;
+				font-size: 28px;
+				line-height: 56px;
+				color: inherit;
+				transition: border-radius 0.3s;
+				margin: 0 10px;
+				&:hover{
+					border: 2px solid #fff;
+					line-height: 52px;
+					border-radius: 28px;
+				}
+				a{
+					float: left;
+					width: 100%;
+					height: 100%;
+					color: #fff;
+				}
+			}
+		}
+	}
+	a.mailme{
+		display: inline-block;
+		font-size: 30px;
+		line-height: 30px;
+		padding: 10px 54px 20px 54px;
+		margin: 0 0 30px 0;
+		background: $orange;
+		color: #fff;
+		opacity: 0.9;
+		text-decoration: none;
+		border-radius: 5px;
+		&:hover{
+			opacity: 1;
+		}
+		small{
+			display: block;
+			font-size: 13px;
+			border-bottom: 1px solid #fff;
+			margin-bottom: 10px;
+		}
+	}
+	#social-share{
+		color: #fff;
+		span{
+			float: left;
+			width: auto;
+			margin-right: 5px;
+		}
+		.share-button{
+			display: inline-block;
+			padding-left: 5px;
+		}
+	}
+}
+section#copy{
+	background: $superdark-gray;
+	padding: 15px 0;
+	&:hover{
+		span, a{
+			opacity: 0.9;
+		}
+	}
+	span, a{
+		color: #fff;
+		opacity: 0.7;
+	}
+}

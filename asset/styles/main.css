@@ -1,0 +1,223 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: none; }
+
+@media (max-width: 767px) {
+  .col-xs-mb {
+    margin-bottom: 30px; } }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .col-sm-mb {
+    margin-bottom: 15px; } }
+
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+body {
+  background: #FCFFFF;
+  font-family: 'Lato', sans-serif; }
+
+h2 {
+  font-size: 50px;
+  padding-bottom: 70px;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+h3 {
+  text-align: left;
+  font-size: 30px;
+  margin: 0 0 15px 0;
+  padding: 0; }
+
+h4 {
+  font-size: 16px;
+  line-height: 30px; }
+
+p {
+  padding-left: 20px;
+  color: #868686;
+  font-weight: 300;
+  line-height: 46px;
+  font-size: 16px; }
+
+section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 70px 0; }
+  section h2 {
+    text-align: center; }
+
+section#landing {
+  height: 750px;
+  padding: 0;
+  background: url("../img/me.png") bottom right no-repeat;
+  background-size: auto 700px; }
+  section#landing span {
+    display: block;
+    padding: 200px 0 0 0;
+    font-size: 38px; }
+    section#landing span strong {
+      font-size: 82px;
+      color: #BD4932; }
+  section#landing img {
+    float: right;
+    max-height: 100%;
+    width: auto; }
+
+section#whatiwant {
+  background: #BD4932;
+  text-align: center; }
+  section#whatiwant span {
+    font-size: 45px;
+    color: #fff; }
+
+section#whatido .row {
+  padding-bottom: 70px; }
+  section#whatido .row:last-child {
+    padding-bottom: 0px; }
+  section#whatido .row:hover span.bracket {
+    opacity: 0.6; }
+
+section#whatido span.bracket {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 130px;
+  font-weight: 200;
+  line-height: 200px;
+  color: #868686;
+  font-weight: 300;
+  opacity: 0.3;
+  transition: ease-in-out 0.3s; }
+
+section#whatido ul li {
+  color: #868686;
+  font-weight: 300;
+  line-height: 46px;
+  font-size: 17px; }
+  section#whatido ul li:before {
+    font-family: FontAwesome;
+    content: '\f00c';
+    margin-right: 15px;
+    color: #BD4932; }
+
+section#whatido ul.skillsets {
+  padding: 0 0 0 20px; }
+  section#whatido ul.skillsets li {
+    color: #606060;
+    font-weight: 400; }
+    section#whatido ul.skillsets li:before {
+      content: "";
+      margin: 0; }
+
+section#whyiwant {
+  background: #105B63;
+  color: #fff; }
+  section#whyiwant p {
+    text-align: justify;
+    color: inherit;
+    font-size: 30px; }
+
+section#experience .row {
+  margin-bottom: 30px; }
+
+section#experience h3 {
+  margin-bottom: 5px; }
+
+section#experience span.date {
+  display: block;
+  margin-bottom: 5px;
+  color: #868686; }
+
+section#experience p {
+  padding-left: 0;
+  line-height: 30px; }
+
+section#awards {
+  background: #A1E8D9; }
+  section#awards ul {
+    text-align: center; }
+    section#awards ul li {
+      float: none;
+      display: inline-block;
+      height: auto; }
+      section#awards ul li img {
+        float: left;
+        width: 100%;
+        height: auto; }
+
+section#contact {
+  background: #4a4a4a;
+  color: #fff;
+  text-align: center; }
+  section#contact img {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: auto;
+    border-radius: 125px;
+    margin: 0 auto 0 auto; }
+  section#contact ul.social {
+    text-align: center;
+    margin: 70px 0; }
+    section#contact ul.social li {
+      display: inline-block; }
+      section#contact ul.social li span {
+        display: block;
+        width: 56px;
+        height: 56px;
+        font-size: 28px;
+        line-height: 56px;
+        color: inherit;
+        transition: border-radius 0.3s;
+        margin: 0 10px; }
+        section#contact ul.social li span:hover {
+          border: 2px solid #fff;
+          line-height: 52px;
+          border-radius: 28px; }
+        section#contact ul.social li span a {
+          float: left;
+          width: 100%;
+          height: 100%;
+          color: #fff; }
+  section#contact a.mailme {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 10px 54px 20px 54px;
+    margin: 0 0 30px 0;
+    background: #FF9800;
+    color: #fff;
+    opacity: 0.9;
+    text-decoration: none;
+    border-radius: 5px; }
+    section#contact a.mailme:hover {
+      opacity: 1; }
+    section#contact a.mailme small {
+      display: block;
+      font-size: 13px;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 10px; }
+  section#contact #social-share {
+    color: #fff; }
+    section#contact #social-share span {
+      float: left;
+      width: auto;
+      margin-right: 5px; }
+    section#contact #social-share .share-button {
+      display: inline-block;
+      padding-left: 5px; }
+
+section#copy {
+  background: #333333;
+  padding: 15px 0; }
+  section#copy:hover span, section#copy:hover a {
+    opacity: 0.9; }
+  section#copy span, section#copy a {
+    color: #fff;
+    opacity: 0.7; }

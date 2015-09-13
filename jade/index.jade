@@ -1,0 +1,175 @@
+doctype html
+html
+	head
+		title Take me as intern during the summer
+		meta(charset="utf-8")
+		meta(name="description", content="Hey. My name is Marek and I'd like to be your intern during the summer.")
+		meta(name="keywords", content="intern, summer, marekgalovic, web developer")
+		meta(property="og:title", content="Take me as intern during the summer")
+		meta(property="og:type", content="website")
+		meta(property="og:image", content="http://intern.marekgalovic.com/asset/img/socialcover.png")
+		meta(property="og:url", content="http://intern.marekgalovic.com")
+		meta(property="og:description", content="Hey. My name is Marek and I'd like to be your intern during the summer.")
+		include ./includes/head.jade
+	body
+		div.fb-root
+		script.
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=291334557564803";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		section#landing
+			.container
+				div.col-sm-12.col-md-7.wow.slideInDown
+					span#landing-text <strong>Hey</strong> <br> My name is Marek. <br> I am 18 years old web application developer from Slovakia.
+		section#whatiwant
+			span This summer I'd like to be your intern.
+		section#whatido
+			h2.wow.pulse How can I help you ?
+			div.container
+				//front end skills
+				div.row.wow.slideInLeft
+					.col-sm-mb.col-sm-12.col-md-3
+						h3 Front-end skills
+						ul.skillsets
+							li HTML
+							li CSS
+							li JavaScript &amp; jQuery
+							li AngularJS
+					.hidden-sm.hidden-xs.col-md-3
+						span.bracket }
+					.col-sm-12.col-md-6
+						h3 I can help you with
+						ul.skilldescs
+							li Slicing graphics into <strong>responsive HTML &amp; CSS</strong> templates.
+							li Creating <strong>interactive websites</strong> through jQuery and JavaScript.
+							li Developing <strong>browser applications</strong> using <strong>AngularJS.</strong>
+							li Preparing a template for your <strong>mobile app using Ionic.</strong>
+				//server side
+				div.row.wow.slideInRight
+					.col-sm-12.col-md-3
+						h3 Server applications
+						ul.skillsets
+							li PHP
+							li Node.js
+							li Socket.io
+					.hidden-sm.hidden-xs.col-md-3
+						span.bracket }
+					.col-sm-12.col-md-6
+						h3 I can help you with
+						ul.skilldescs
+							li Developing <strong>complex and scalable</strong> server applications using <strong>PHP</strong>.
+							li Developing fast <strong>JavaScript server applications in Node.js.</strong>
+							li Developing an <strong>real-time application</strong> using Socket.io
+							li Designing <strong>RESTful APIs</strong> for your web applications.
+				//databases
+				div.row.wow.slideInLeft
+					.col-sm-12.col-md-3
+						h3 Databases
+						ul.skillsets
+							li MySQL &amp; PostgreSQL
+							li MongoDB
+							li Elasticsearch
+					.hidden-sm.hidden-xs.col-md-3
+						span.bracket }
+					.col-sm-12.col-md-6
+						h3 I can help you with
+						ul.skilldescs
+							li Designing a <strong>relational database</strong> for your web application.
+							li Creating <strong>NoSQL database</strong> architectures.
+							li Analyzing <strong>big amounts of data</strong> using <strong>database aggregations.</strong>
+							li Developing an customized <strong>search engine</strong> using Elasticsearch.
+				//tools I use
+				div.row.wow.slideInRight
+					.col-sm-12.col-md-12
+						h3 Other tools I use
+						p To ease and speed up my workflow I use frameworks and tools like: <strong>Laravel, Express.js, Mongoose, Bootstrap, Jade, Sass, CoffeeScript, Composer, Bower, Gulp</strong>
+		section#whyiwant
+			h2.wow.pulse Why do I want to become your intern ?
+			.container
+				p As my high school studies end this year I have four months gap until my university studies begin. I want to use this time meainingfully and do some awesome stuff with you.
+		section#experience
+			h2.wow.pulse Experience
+			div.container
+				.row.col-xs-12.wow.slideInLeft
+					h3 Freelance web developer
+					span.date 2012 - 2014
+					p I've been working on small and medium projects as a freelance dev since 2012. This helped me to get better mostly in browser technologies such as HTML, CSS and JavaScript.
+				.row.col-xs-12.wow.slideInRight
+					h3 Software developer at PrincipioMSD 
+					span.date 2014 - 2015
+					p During this time I worked as software developer at PrincipioMSD. I worked mainly in PHP (Laravel framework) and developed custom e-commerce system for them. This was such a great experience. It helped me to understand how to design application for future scale, how to design big database structures and how to work with data effectively.
+				.row.col-xs-12.wow.slideInLeft
+					h3 Founder at Contee
+					span.date September 2014 - March 2015
+					p In September 2014 I founded Contee - content recommendation service. It uses Node.js as an application server and MongoDB to store and analyze the data. I won a few competitions with Contee and learned how to work with tons of raw data in order to give them some meaning.
+				.row.col-xs-12.wow.slideInRight
+					h3 Software developer at KBS Development
+					span.date 2015
+					p I work as a software developer at KBS Development. I create web applications using mainly PHP (Laravel framework) and AngularJS. This company cares about the way how the code is written so I have learned how to use design patterns and coding concepts in software development.
+				.row.col-xs-12.wow.slideInLeft
+					h3 Freetime projects
+					span.date June 1997 - present :)
+					p The best way to learn something new is create something with it. I develop my own projects mostly to improve myself in new technologies. 
+		section#awards
+			h2.wow.bounce Awards
+			div.container
+				ul
+					li.col-xs-8.col-md-2
+						.img-wrap
+							img(src= 'asset/img/secondplace.png', alt= '')
+							h4 JuniorInternet <br> 2015
+					li.col-xs-8.col-md-2
+						.img-wrap
+							img(src= 'asset/img/firstplace.png', alt= '')
+							h4 SOČ (regional) <br> 2015
+					li.col-xs-8.col-md-2
+						.img-wrap
+							img(src= 'asset/img/thirdplace.png', alt= '')
+							h4 SOČ (national) <br> 2015
+					li.col-xs-8.col-md-2
+						.img-wrap
+							img(src= 'asset/img/secondplace.png', alt= '')
+							h4 Zenit <br> 2014
+					li.col-xs-8.col-md-2
+						.img-wrap
+							img(src= 'asset/img/secondplace.png', alt= '')
+							h4 ASIT <br> 2015
+		//testimotionals maybe 
+		section#contact
+			div.container
+				img(src= 'asset/img/me-small.jpg', alt= '').wow.bounceInDown
+				ul.social
+					li
+						span
+							a(href= 'https://www.facebook.com/marek.galovic', target="blank")
+								i.fa.fa-facebook
+					li
+						span
+							a(href= 'https://sk.linkedin.com/pub/marek-galovič/42/831/b72', target="blank")
+								i.fa.fa-linkedin
+					li
+						span
+							a(href= 'https://github.com/marekgalovic', target="blank")
+								i.fa.fa-github
+					li
+						span
+							a(href= 'mailto:intern@marekgalovic.com', target="blank")
+								i.fa.fa-envelope-o
+				a(href='mailto:intern@marekgalovic.com').mailme.wow.bounceInLeft
+					small Help my dream come true
+					span intern@marekgalovic.com
+				div.clearfix
+				div#social-share.pull-right
+					span Share my dream:
+					div.share-button.facebook
+						div.fb-share-button(data-href="http://intern.marekgalovic.com" data-layout="button_count")
+					div.share-button.twitter
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://intern.marekgalovic.com">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		section#copy
+			.container
+				span Designed and coded by <strong>Marek Galovič</strong>
+				a(href= "").pull-right Check out source of this web !
