@@ -7,7 +7,8 @@ ul {
 
 body {
   background: #FCFFFF;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden; }
 
 h2 {
   font-size: 50px;
@@ -139,6 +140,39 @@ section#awards {
         float: left;
         width: 100%;
         height: auto; }
+      section#awards ul li:hover .img-wrap h4 span.info {
+        opacity: 1; }
+      section#awards ul li .img-wrap {
+        background: #A1E8D9; }
+        section#awards ul li .img-wrap h4 {
+          position: relative;
+          float: left;
+          width: 100%;
+          height: auto; }
+          section#awards ul li .img-wrap h4 span.info {
+            position: absolute;
+            padding: 20px;
+            width: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: #fff;
+            bottom: calc(100% + 20px);
+            bottom: -webkit-calc(100% + 20px);
+            bottom: -moz-calc(100% + 20px);
+            opacity: 0;
+            transition: all 0.3s ease-in-out; }
+            section#awards ul li .img-wrap h4 span.info i.arrow {
+              position: absolute;
+              width: 30px;
+              height: 20px;
+              top: 100%;
+              left: 0;
+              right: 0;
+              margin: auto;
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              border-top: 18px solid #fff; }
 
 section#contact {
   background: #4a4a4a;
@@ -227,3 +261,6 @@ section#copy {
 
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container.small {
+    width: 1000px; } }

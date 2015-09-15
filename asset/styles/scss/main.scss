@@ -5,6 +5,7 @@
 body{
 	background: $light-gray;
 	font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
 }
 
 h2{
@@ -166,6 +167,50 @@ section#awards{
 				float: left;
 				width: 100%;
 				height: auto;
+			}
+			&:hover{
+				.img-wrap{
+					h4{
+						span.info{
+							opacity: 1;
+						}
+					}
+				}
+			}
+			.img-wrap{
+				background: $light-blue;
+				h4{
+					position: relative;
+					float: left;
+					width: 100%;
+					height: auto;
+					span.info{
+						position: absolute;
+						padding: 20px;
+						width: 100%;
+						left: 0;
+						right: 0;
+						margin: auto;
+						background: #fff;
+						bottom: calc(100% + 20px);
+						bottom: -webkit-calc(100% + 20px);
+						bottom: -moz-calc(100% + 20px);
+						opacity: 0;
+						transition: all 0.3s ease-in-out;
+						i.arrow{
+							position: absolute;
+							width: 30px;
+							height: 20px;
+							top: 100%;
+							left: 0;
+							right: 0;
+							margin: auto;
+							border-left: 15px solid transparent;
+							border-right: 15px solid transparent;
+							border-top: 18px solid #fff;
+						}
+					}
+				}
 			}
 		}
 	}
